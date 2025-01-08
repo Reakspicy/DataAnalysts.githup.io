@@ -1,0 +1,262 @@
+/* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #F0F4FF;
+}
+
+.sidebar {
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 85px;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  background: #161a2d;
+  padding: 25px 20px;
+  transition: all 0.4s ease;
+}
+
+.sidebar:hover {
+  width: 250px;
+}
+
+/* .sidebar .sidebar-header {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .sidebar-header img {
+  width: 42px;
+  border-radius: 50%;
+}
+
+.sidebar .sidebar-header h2 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 23px;
+} */
+
+.sidebar-links h4 {
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 10px 0;
+  position: relative;
+}
+
+.sidebar-links h4 span {
+  opacity: 0;
+}
+
+.sidebar:hover .sidebar-links h4 span {
+  opacity: 1;
+}
+
+.sidebar-links .menu-separator {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(1);
+  transform: translateY(-50%);
+  background: #4f52ba;
+  transform-origin: right;
+  transition-delay: 0.2s;
+}
+
+.sidebar:hover .sidebar-links .menu-separator {
+  transition-delay: 0s;
+  transform: scaleX(0);
+}
+
+.sidebar-links {
+  list-style: none;
+  margin-top: 20px;
+  height: 80%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.sidebar-links::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-links li a {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 15px 10px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.sidebar-links li a:hover {
+  color: #161a2d;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.user-account {
+  margin-top: auto;
+  padding: 12px 10px;
+  margin-left: -10px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  color: #161a2d;
+}
+
+.user-profile img {
+  width: 42px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.user-profile h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.user-profile span {
+  font-size: 0.775rem;
+  font-weight: 600;
+}
+
+.user-detail {
+  margin-left: 23px;
+  white-space: nowrap;
+}
+
+.sidebar:hover .user-account {
+  background: #fff;
+  border-radius: 4px;
+}
+.section1 {
+  background: url(./asset/Bg2.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height:100vh;
+}
+
+.section1 .Element img{
+  width: 50%;
+  margin: -45px 50%;
+  animation: anima 1s ease-in-out  alternate-reverse infinite;
+}
+@keyframes anima {
+  form{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(25px);
+  }
+}
+.section1 .text{
+ padding: 120px;
+ font-size:1rem;
+ font-style: italic;
+}
+.section2 {
+  background: url(./asset/Bg2.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:100vh;
+}
+
+@media only screen and (max-width: 580px) {
+  .sidebar {
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 70px;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    background: #161a2d;
+    padding: 25px 15px;
+    transition: all 0.4s ease;
+  }
+  .sidebar:hover {
+    width: 200px;
+  }
+  .sidebar-links h4 {
+    font-size: 0.8rem;
+  }
+  .sidebar-links li a {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 15px 10px;
+    text-decoration: none;
+    transition: 0.2s ease;
+    font-size: 0.7rem;
+  }
+  .sidebar-links .material-symbols-outlined{
+    font-size: 20px;
+  }
+  
+  .user-profile img {
+    width: 39px;
+    /* border-radius: 50%; */
+    /* border: 2px solid #fff; */
+  }
+  
+  .user-profile h3 {
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .user-profile span {
+    font-size: 0.65rem;
+    font-weight: 500;
+  }
+  .user-detail {
+    margin-left: 20px;
+    /* white-space: nowrap; */
+  }
+  
+  .sidebar:hover .user-account {
+    /* background: #fff; */
+    background: #159a3d;
+    /* border-radius: 4px; */
+  }
+
+  .section1 {
+    background: url(./asset/Bg2.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:200vh;
+  }
+  .section1 .text {
+    font-size: 0.3rem;
+    padding: 10%;
+    margin-left: 35px;
+  } 
+  .section1 .Element img {
+    width: 60%;
+    margin: -45px 50%;
+  }
+}
